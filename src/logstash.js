@@ -41,6 +41,8 @@ function LogstashStream(options) {
   EventEmitter.call(this);
   options = options || {};
 
+  this.client = null;
+
   this.name = 'bunyan';
   this.level = options.level || 'info';
   this.server = options.server || os.hostname();

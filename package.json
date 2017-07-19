@@ -42,7 +42,7 @@
   "scripts": {
     "test": "npm run eslint && npm run coverage",
     "eslint": "eslint src --max-warnings=0",
-    "coverage": "LOGGER_LEVEL=fatal istanbul cover _mocha --root ./src/lib -- src/test",
+    "coverage": "LOGGER_LEVEL=fatal istanbul cover _mocha --root ./src -- ./test",
     "mocha": "mocha --bail src/test",
     "build": "npm run transpile && npm run test-dist",
     "transpile": "babel src -d dist",

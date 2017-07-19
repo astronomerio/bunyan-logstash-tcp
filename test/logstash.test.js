@@ -7,7 +7,7 @@ const tls = require('tls');
 const CBuffer = require('CBuffer');
 const { expect } = require('chai');
 
-const { createStream } = require('../lib/logstash');
+const { createStream } = require('../src/logstash');
 
 const EventEmitter = require('events').EventEmitter;
 
