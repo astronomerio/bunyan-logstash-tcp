@@ -51,8 +51,6 @@ function LogstashStream(options) {
   this.tags = options.tags || ['bunyan'];
   this.type = options.type;
 
-  this.client = null;
-
   // ssl
   this.ssl_enable = options.ssl_enable || false;
   this.ssl_key = options.ssl_key || '';
